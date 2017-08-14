@@ -1,2 +1,8 @@
-var name = 'ali';
-console.log(name);
+var express = require('express');
+var app=express();
+
+var port = 8080;
+
+app.listen(port,function(err){
+console.log('the server is running on port: ' + port);
+});
