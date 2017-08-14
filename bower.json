@@ -1,0 +1,20 @@
+{
+  "name": "nodeproject",
+  "description": "sample node project created using code editor.",
+  "main": "app.js",
+  "authors": [
+    "ali ashraf <aliashraf@buzzboard.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/syedaliashraf/nodeprojectcodeeditor",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
