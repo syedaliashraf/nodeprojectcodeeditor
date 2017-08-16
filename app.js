@@ -14,7 +14,10 @@ app.set('view engine', 'ejs')
 
 app.get('/', function(req, res){
     //res.send('hello world!!!');
-    res.render('index',{list:['1st','2nd','3rd']})
+    res.render('index',{
+        list:['1st','2nd','3rd'],
+        nav:['Services','Portfolio','About','Team','Contact']
+})
 });
 
 app.get('/routing', function(req, res){
