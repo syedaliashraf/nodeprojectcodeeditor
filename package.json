@@ -19,6 +19,7 @@
   "homepage": "https://github.com/syedaliashraf/nodeprojectcodeeditor#readme",
   "dependencies": {
     "bower": "^1.8.0",
+    "ejs": "^2.5.7",
     "express": "^4.15.4",
     "gulp-nodemon": "^2.2.1"
   },
