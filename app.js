@@ -15,7 +15,19 @@ app.set('view engine', 'ejs')
 
 eventRouter.route('/')
     .get(function(req,res){
-    res.send('hello event');
+    res.render('events',
+    {
+        list:['fourth','fifth','sixth'],
+        nav:[
+            {Link:'Services', Text:'Services'},
+            {Link:'Portfolio', Text:'Portfolio'},
+            {Link:'About', Text:'About'},
+            {Link:'Team', Text:'Team'},
+            {Link:'Contact', Text:'Contact'},
+            {Link:'Events', Text:'Events'}
+        ]
+}
+);
 })
 
 eventRouter.route('/eventLevel2')
