@@ -55,9 +55,24 @@ eventRouter.route('/')
 );
 })
 
-eventRouter.route('/eventLevel2')
+eventRouter.route('/:id')
+
 .get(function(req,res){
-res.send('hello eventLevel2');
+    var id = req.params.id;
+    
+    res.render('event',{
+        list: ['event 1','event 2','event 3'],
+        nav: [
+            {Link:'Services', Text:'Services'},
+            {Link:'Portfolio', Text:'Portfolio'},
+            {Link:'About', Text:'About'},
+            {Link:'Team', Text:'Team'},
+            {Link:'Contact', Text:'Contact'},
+            {Link:'Events', Text:'Events'}
+        ],
+        events: eventsData[id]
+}
+);
 })
 
 module.exports = eventRouter;

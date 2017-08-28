@@ -21,7 +21,8 @@
     "bower": "^1.8.0",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
-    "gulp-nodemon": "^2.2.1"
+    "gulp-nodemon": "^2.2.1",
+    "mongodb": "^2.2.31"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
