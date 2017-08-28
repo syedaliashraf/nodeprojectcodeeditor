@@ -48,6 +48,7 @@ dbRouter.route('/AddEventData')
             var collection = db.collection('events');
             collection.insertMany(eventsData,function(error,results){
                 res.send(results);
+                db.close();
             })
         });
     });
