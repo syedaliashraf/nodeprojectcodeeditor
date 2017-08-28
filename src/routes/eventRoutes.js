@@ -51,12 +51,10 @@ eventRouter.route('/')
             {Link:'Events', Text:'Events'}
         ],
         events: eventsData
-}
-);
-})
+    });
+});
 
 eventRouter.route('/:id')
-
 .get(function(req,res){
     var id = req.params.id;
     
@@ -71,8 +69,7 @@ eventRouter.route('/:id')
             {Link:'Events', Text:'Events'}
         ],
         events: eventsData[id]
-}
-);
-})
+    });
+});
 
 module.exports = eventRouter;

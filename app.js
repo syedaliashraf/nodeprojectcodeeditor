@@ -1,6 +1,7 @@
 var express = require('express');
 var app=express();
 var eventRouter = require('./src/routes/eventRoutes');
+var dbRouter = require('./src/routes/dbRoutes');
 
 
 var port = 8080;
@@ -9,6 +10,7 @@ app.use(express.static('public'));
 //app.use(express.static('src/views'));
 app.use(express.static('bower_components'));
 app.use('/Events',eventRouter);
+app.use('/db',dbRouter);
 
 app.set('views','./src/views')
 app.set('view engine', 'ejs')
